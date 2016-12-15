@@ -6,9 +6,14 @@
 
 [Laravel 最新资讯](https://news.laravel-china.org/)、精华文章、开发技巧、推荐扩展包、[最新 Laravel 职位信息](https://laravel-china.org/categories/1) 以及 [「Laravel China 社区」](https://laravel-china.org/) 上的精华讨论。
 
+由 [Summer](https://github.com/summerblue) 设计和编码。
+
 想学习 Laravel 的同学，推荐 [Summer](https://github.com/summerblue) 的书籍 [《Laravel 入门教程》](https://laravel-china.org/topics/3383) 。
 
-由 [Summer](https://github.com/summerblue) 设计和编码。
+
+[![](http://ww1.sinaimg.cn/large/6d86d850gw1fao8va0fv0j208y0aw74v.jpg)](https://laravel-china.org/topics/3383)
+
+> [《Laravel 入门教程》](https://laravel-china.org/topics/3383) 封面由设计师 [安正超](https://laravel-china.org/users/76) 设计。
 
 <a href="http://estgroupe.com/" style="color:#a5a5a5">
       <img src="https://dn-phphub.qbox.me/uploads/images/201612/12/1/iq7WQc2iuW.png" style="width: 20px;margin-right: 4px;margin-top: -4px;">
