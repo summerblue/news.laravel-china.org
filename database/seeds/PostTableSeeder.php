@@ -18,7 +18,7 @@ class PostTableSeeder extends Seeder
         $categories = Category::all()->pluck('id')->toArray();
         $users = User::all()->pluck('id')->toArray();
 
-        foreach (range(1, 500) as $index) {
+        foreach (range(1, 200) as $index) {
             $datas[] = [
                 'title'         => $faker->sentence(),
                 'excerpt'       => $faker->sentence(),
