@@ -8,7 +8,8 @@
           showCancelButton: true,
           confirmButtonColor: "#21BA45",
           confirmButtonText: "前往注册",
-          closeOnConfirm: false
+          closeOnConfirm: false,
+          closeOnCancel: true
         },
         function(){
             window.location = 'https://laravel-china.org/login-required';

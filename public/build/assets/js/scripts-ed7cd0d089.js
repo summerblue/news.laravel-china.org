@@ -75,7 +75,8 @@ var QRCode;!function(){function t(t){this.mode=l.MODE_8BIT_BYTE,this.data=t,this
           showCancelButton: true,
           confirmButtonColor: "#21BA45",
           confirmButtonText: "前往注册",
-          closeOnConfirm: false
+          closeOnConfirm: false,
+          closeOnCancel: true
         },
         function(){
             window.location = 'https://laravel-china.org/login-required';
