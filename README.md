@@ -180,3 +180,13 @@ gulp watch
 ```shell
 php artisan make:scaffold Users --schema="github_id:integer:unsigned:default(0):index,notification_count:integer:unsigned:default(0):index,name:string:index,remember_token:string:nullable,image_url:string:nullable,verification_token:string:nullable,phone:string:nullable:index,email:string:nullable:index,real_name:string:nullable,avatar:string,wechat_openid:string:nullable:index,wechat_unionid:string:nullable:index,weibo_id:string:nullable:index,register_source:string:nullable:index,name:string:index:index"
 ```
+
+## 使用协议
+
+基于 MIT 协议基础上，增加署名权。请在你的修改版本站点底部保留：
+
+```php
+<p class="credits font2 add-top-quarter">
+    由 <a href="https://github.com/summerblue" target="_blank">Summer</a> 设计与编码。
+</p>
+```
