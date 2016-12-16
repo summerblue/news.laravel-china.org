@@ -4,7 +4,7 @@
         swal({
           title: "订阅 Laravel 资讯",
           text: "请前往「Laravel China 社区」注册账号，即可自动订阅「Laravel 资讯」。",
-          type: "warning",
+          type: "info",
           showCancelButton: true,
           confirmButtonColor: "#21BA45",
           confirmButtonText: "前往注册",
