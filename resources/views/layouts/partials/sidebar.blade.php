@@ -11,7 +11,7 @@
             <a href="https://laravel-china.org/" class="btn btn-default btn-block" target="_blank">Laravel China 社区</a>
             <a href="https://laravel-china.org/docs/home" class="btn btn-default btn-block" target="_blank">Laravel 中文文档</a>
             <a href="https://cs.laravel-china.org/" class="btn btn-default btn-block" target="_blank">Laravel 速查表</a>
-            <a href="https://easywechat.org/" class="btn btn-default btn-block" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i> Easy WeChat</a>
+            <a href="https://easywechat.org/" class="btn btn-default btn-block" target="_blank"><i class="fa fa-wechat" aria-hidden="true"></i> Easy WeChat</a>
             <a href="http://laravel.so/" class="btn btn-default btn-block" target="_blank">Laravel 开发技巧</a>
             <a href="https://lumen.laravel-china.org/" class="btn btn-default btn-block" target="_blank">Lumen 中文文档</a>
             <a href="https://laravel-china.org/laravel-tutorial/5.1/about" class="btn btn-default btn-block" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Laravel 入门教程</a>
