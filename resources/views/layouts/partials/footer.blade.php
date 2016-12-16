@@ -22,12 +22,12 @@
                         <a href="http://weibo.com/laravelnews" class="icon-weibo">
                             <i class="fa fa-weibo" aria-hidden="true"></i>
                         </a>
-                        <a href="https://github.com/summerblue" class="icon-github">
+                        <a href="https://github.com/summerblue/news.laravel-china.org" class="icon-github">
                             <i class="fa fa-github-alt" aria-hidden="true"></i>
                         </a>
                     </p>
                     <p class="credits font2  add-top-quarter">
-                        由 <a href="https://github.com/summerblue/news.laravel-china.org" target="_blank">Summer</a> 设计与编码。
+                        由 <a href="https://github.com/summerblue" target="_blank">Summer</a> 设计与编码。
                         <hr style="border-top: 1px solid #4c4c4c;width: 320px;">
                         <a href="http://estgroupe.com/" style="color:#a5a5a5">
                             <img class="brand-icon" src="https://dn-phphub.qbox.me/uploads/images/201612/12/1/iq7WQc2iuW.png" ><span style="margin-top: 7px;display: inline-block;">
