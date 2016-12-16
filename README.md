@@ -2,7 +2,7 @@
 
 ## 说明
 
-产品名称：Laravel 资讯
+Laravel 资讯网站的源代码 https://news.laravel-china.org/ 。
 
 [Laravel 最新资讯](https://news.laravel-china.org/)、精华文章、开发技巧、推荐扩展包、[最新 Laravel 职位信息](https://laravel-china.org/categories/1) 以及 [「Laravel China 社区」](https://laravel-china.org/) 上的精华讨论。
 
