@@ -40,7 +40,7 @@
 
         <article class="col-md-3 pic-block">
             <a class="shodow-box" href="http://estgroupe.com">
-                <img class="img-responsive" alt="" title="" src="http://ww3.sinaimg.cn/large/6d86d850gw1faqm3quco7j20l50jktb9.jpg" />
+                <img class="img-responsive" alt="" title="" src="https://dn-phphub.qbox.me/uploads/images/201612/18/1/l7WfKh5n3T.jpg" />
             </a>
         </article>
     </div>
