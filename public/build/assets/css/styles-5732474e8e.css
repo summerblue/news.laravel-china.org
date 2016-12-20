@@ -10291,4 +10291,11 @@ footer .icons {
 .home-page .block-header a {
   color: #a7a9ab; }
 
+.posts-show-page .home-list .pic-block img {
+  width: 242px;
+  height: 128px; }
+
+.posts-show-page .pic-block h4 {
+  font-size: 15px; }
+
 /*# sourceMappingURL=styles.css.map */
