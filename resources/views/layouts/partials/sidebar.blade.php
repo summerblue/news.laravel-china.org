@@ -23,7 +23,7 @@
         <div class="grid-wrap">
             <h4 class="title">关注订阅号</h4>
             <div class="content">
-                <img src="/assets/images/qrcode_squre.jpg" alt="" style="width:100%"/>
+                <img src="/assets/images/qrcode_new.png" alt="" style="width:100%"/>
             </div>
         </div>
     </div>

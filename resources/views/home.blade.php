@@ -31,10 +31,9 @@
             </div>
         </div>
 
-        <article class="col-md-3 pic-block">
+        <article class="col-md-3 pic-block qrcode-pic-block">
             <div class="shodow-box" >
-                <img class="img-responsive" alt="" title="" src="/assets/images/qrcode_new.png" />
-                <h4 class="text-center">扫码关注微信订阅号</h4>
+                <img class="img-responsive qrcode-img" alt="" title="" src="/assets/images/qrcode_new.png" />
             </div>
         </article>
 

@@ -1467,12 +1467,21 @@ footer .icons {
     font-size: 15px;
 }
 
+img.qrcode-img {
+    width: 244px;
+    display: inline-block;
+}
+
+.qrcode-pic-block {
+    text-align: center;
+}
+
 @media (max-width: 767px) {
   article.foot-logo hr {
       display: none;
   }
 
-  .home-list .pic-block img {
+  .home-list .pic-block img, img.qrcode-img {
       width: 100%;
       height: 100%;
   }
