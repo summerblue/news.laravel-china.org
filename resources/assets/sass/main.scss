@@ -1454,6 +1454,19 @@ footer .icons {
     width: 16px;margin-right: 7px;margin-top: -2px;margin-bottom: 0px;
 }
 
+.home-page .block-header a {
+    color: #a7a9ab;
+}
+
+.posts-show-page .home-list .pic-block img {
+    width: 242px;
+    height: 128px;
+}
+
+.posts-show-page .pic-block h4{
+    font-size: 15px;
+}
+
 @media (max-width: 767px) {
   article.foot-logo hr {
       display: none;
@@ -1470,6 +1483,11 @@ footer .icons {
   }
 
   .pic-block.big-block img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .posts-show-page .home-list .pic-block img  {
       width: 100%;
       height: 100%;
   }
@@ -1501,17 +1519,4 @@ footer .icons {
     .mastfoot {
         padding: 40px;
     }
-}
-
-.home-page .block-header a {
-    color: #a7a9ab;
-}
-
-.posts-show-page .home-list .pic-block img {
-    width: 242px;
-    height: 128px;
-}
-
-.posts-show-page .pic-block h4{
-    font-size: 15px;
 }
