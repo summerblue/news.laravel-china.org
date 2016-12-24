@@ -16,7 +16,7 @@
                     <a href="index.html"><img alt="" title="" src="/assets/images/icon.png" /></a>
 
                     <p class="credits font2 dark add-top-quarter icons">
-                        <a href="/assets/images/qrcode.png" class="icon-wechat">
+                        <a href="/assets/images/qrcode_new.png" class="icon-wechat">
                             <i class="fa fa-weixin" aria-hidden="true"></i>
                         </a>
                         <a href="http://weibo.com/laravelnews" class="icon-weibo">

@@ -28,7 +28,7 @@
             <div class="navbar-right">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/assets/images/qrcode.png" class="icon-wechat">
+                        <a href="/assets/images/qrcode_new.png" class="icon-wechat">
                             <i class="fa fa-weixin" aria-hidden="true"></i>
                         </a>
                     </li>
