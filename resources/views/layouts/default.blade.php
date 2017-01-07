@@ -25,7 +25,6 @@
     <section class="mastwrap">
 
         <div class="container">
-            @include('error')
 
             @yield('content')
         </div>

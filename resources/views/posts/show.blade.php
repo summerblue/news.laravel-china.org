@@ -30,6 +30,11 @@
             <footer class="post-footer clearfix">
                 <div class="pull-left tag-list">
                     <a href="{{ route('categories.show', [$post->category->id]) }}"><i class="fa fa-folder-open-o"></i> {{ $post->category->name }}</a>
+
+                    @if (Auth::check())
+                        | <a href="{{ route('posts.edit', [$post->id]) }}"><i class="fa fa-edit"></i> 修改文章</a>
+                    @endif
+
                 </div>
 
                 <div class="pull-right share">

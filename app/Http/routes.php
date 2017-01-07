@@ -25,5 +25,5 @@ Route::get('logout', 'Auth\AuthController@getLogout');
 // Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
 // Route::post('password/reset', 'Auth\PasswordController@postReset');
 
-Route::resource('posts', 'PostController', ['only' => ['show']]);
+Route::resource('posts', 'PostController', ['only' => ['show', 'create', 'store', 'update', 'edit']]);
 Route::resource('categories', 'CategoryController', ['only' => ['show']]);

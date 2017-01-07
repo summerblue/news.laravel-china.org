@@ -12,6 +12,34 @@ return [
 
     'model' => Post::class,
 
+    'action_permissions'=> array(
+		'create' => function($model)
+		{
+			return false;
+		}
+	),
+
+    'global_actions' => array(
+        'create_posts' => array(
+            'title' => '新建文章',
+            //the Eloquent query builder is passed to the closure
+            'action' => function($query)
+            {
+                //return a download response
+                return Redirect::to(route('posts.create'));
+            }
+        ),
+    ),
+    'actions' => array(
+		'order_up' => array(
+			'title' => '前往编辑文本',
+			'action' => function($model)
+			{
+				return Redirect::to(route('posts.edit', [$model->id]));
+			}
+		),
+	),
+
     'columns' => [
         'id' => [
             'title' => 'ID'
@@ -81,14 +109,6 @@ return [
             'type' => 'relationship',
             'relationship' => 'user', //this is the name of the Eloquent relationship method!
             'select' => "(:table).name",
-        ],
-        'excerpt' => [
-            'title' => '简介',
-            'type' => 'textarea',
-        ],
-        'body_original' => [
-            'title' => 'Markdown 内容（保存时自动生成内容）',
-            'type' => 'textarea',
         ],
         'created_at' => [
             'title' => '文章发布时间',

@@ -7,6 +7,7 @@ var basejs = [
     'resources/assets/js/vendor/jquery.min.js',
     'resources/assets/js/vendor/bootstrap.min.js',
     'resources/assets/js/vendor/masonry.min.js',
+    'resources/assets/js/vendor/simplemde.min.js',
     'resources/assets/js/vendor/analytics.js',
     // 'resources/assets/js/vendor/moment.min.js',
     // 'resources/assets/js/vendor/upload-image.js',

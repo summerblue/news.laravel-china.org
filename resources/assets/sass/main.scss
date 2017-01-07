@@ -17,7 +17,6 @@ body
 }
 body{
 	font-weight:300;
-	/*overflow-x:hidden !important; */
 }
 
 a, a:hover, a:focus{
@@ -445,14 +444,11 @@ fieldset h1 {
 }
 
 .alert{
-	width: 100%;
-    position: absolute;
     top: 0;
     left:0;
     margin-top: 0px;
     border-radius: 0px;
     padding: 5px;
-    text-align: center;
     -webkit-transition: all .8s linear;
        -moz-transition: all .8s linear;
         -ms-transition: all .8s linear;
@@ -1527,4 +1523,10 @@ img.qrcode-img {
     .mastfoot {
         padding: 40px;
     }
+}
+
+
+.post-composing-box {
+    background-color: #fff;
+    padding: 15px;
 }

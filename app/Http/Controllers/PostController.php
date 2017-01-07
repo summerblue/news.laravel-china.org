@@ -4,10 +4,52 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Auth;
+
+use App\Http\Requests\StorePostRequest;
 
 class PostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
+
+    public function create(Request $request)
+    {
+        $category = Category::find($request->input('category_id'));
+        $categories = Category::all();
+        return view('posts.create_edit', compact('categories', 'category'));
+    }
+
+    public function store(StorePostRequest $request)
+    {
+        $data['user_id'] = Auth::id();
+
+        $post = Post::create($request->only('title','body_original','category_id','cover'));
+
+        return redirect(route('posts.show', $post->id));
+    }
+
+    public function edit($id)
+    {
+        $post = Post::findOrFail($id);
+        $categories = Category::all();
+        $category = $post->category;
+
+        return view('posts.create_edit', compact('post', 'categories', 'category'));
+    }
+
+    public function update($id, StorePostRequest $request)
+    {
+        $post = Post::findOrFail($id);
+        $post->update($request->only('title','body_original','category_id','cover'));
+
+        return redirect(route('posts.show', $post->id));
+    }
+
 	public function index()
 	{
 		$posts = Post::recent()->paginate(10);
