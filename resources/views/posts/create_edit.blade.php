@@ -34,7 +34,7 @@
         </div>
 
         <div class="form-group">
-            <input class="form-control" id="post-title" placeholder="图片 URL" name="cover" type="text" value="{{ old('cover') ?: (isset($post) ? $post->cover : '') }}">
+            <input class="form-control" id="post-title" placeholder="文章封面，请到 laravel-china.org 上随便找个帖子评论框上传图片来获取 HTTPS 的 URL ！" name="cover" type="text" value="{{ old('cover') ?: (isset($post) ? $post->cover : '') }}">
         </div>
 
         <div class="form-group">
