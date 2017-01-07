@@ -22,7 +22,9 @@
               <li><a href="https://laravel-china.org/">论坛</a></li>
               <li><a href="https://doc.laravel-china.org/docs">文档</a></li>
               <li><a href="https://laravel-china.org/laravel-tutorial/5.1/about">Laravel 入门教程</a></li>
-              <li><a href="{{ route('posts.create') }}"><i class="fa fa-plus"></i></a></li>
+              @if (Auth::check())
+                <li><a href="{{ route('posts.create') }}"><i class="fa fa-plus"></i></a></li>
+              @endif
             </ul>
 
             <!-- Right nav -->
