@@ -25,9 +25,7 @@ class Post extends BaseModel
 
     public function setCoverAttribute($file_name)
     {
-        if (starts_with($file_name, 'http')) {
-            $parser_url = explode('/', $file_name);
-            $file_name = end($parser_url);
+        if (strpos($file_name, 'http') !== false) {
             $this->attributes['cover'] = $file_name;
         } else {
             $this->attributes['cover'] = 'uploads/covers/'.$file_name;
