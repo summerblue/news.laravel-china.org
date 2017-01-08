@@ -26,9 +26,9 @@ class PostController extends Controller
 
     public function store(StorePostRequest $request)
     {
+        $data = $request->only('title','body_original','category_id','cover');
         $data['user_id'] = Auth::id();
-
-        $post = Post::create($request->only('title','body_original','category_id','cover'));
+        $post = Post::create($data);
 
         return redirect(route('posts.show', $post->id));
     }
