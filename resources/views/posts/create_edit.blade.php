@@ -55,7 +55,13 @@
     $(document).ready(function()
     {
         var simplemde = new SimpleMDE({
-            spellChecker: false
+            spellChecker: false,
+            autosave: {
+                enabled: true,
+                delay: 1,
+                unique_id: "topic_content"
+            },
+            forceSync: true
         });
     });
 
