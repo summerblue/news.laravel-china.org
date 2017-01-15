@@ -32,7 +32,7 @@ function admin_enum_style_output($value, $reverse = false)
 function make_excerpt($value)
 {
     $excerpt = trim(preg_replace('/\s\s+/', ' ', strip_tags($value)));
-    return str_limit($excerpt, 200);
+    return str_limit($excerpt, 80);
 }
 
 function route_class()
