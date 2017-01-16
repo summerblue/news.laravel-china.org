@@ -10898,6 +10898,8 @@ img.qrcode-img {
 
 .post-composing-box {
   background-color: #fff;
-  padding: 15px; }
+  padding: 30px; }
+  .post-composing-box .header {
+    margin: 20px 0 38px; }
 
 /*# sourceMappingURL=styles.css.map */

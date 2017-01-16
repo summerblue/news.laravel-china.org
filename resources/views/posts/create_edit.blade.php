@@ -7,7 +7,9 @@
 @section('content')
 
 <div class="post-composing-box">
-
+        <div class="text-center header">
+            <h1>创作文章</h1>
+        </div>
       @if (isset($post))
         <form method="POST" action="{{ route('posts.update', $post->id) }}" accept-charset="UTF-8" id="post-create-form">
         <input name="_method" type="hidden" value="PATCH">
