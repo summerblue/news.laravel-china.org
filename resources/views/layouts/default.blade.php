@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>@yield('title')Laravel 资讯 | Laravel China 出品</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="description" content="Laravel 最新资讯、精华文章、开发技巧、推荐扩展包、最新 Laravel 职位信息以及 「Laravel China 社区」上的精华讨论。">
     <meta name="author" content="Summer">
 
