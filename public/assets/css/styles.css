@@ -10732,36 +10732,36 @@ footer .icons {
   background: white;
   padding: 0 15px; }
 
-.categories-show-page .post {
+.users-show-page .post, .categories-show-page .post {
   background: transparent;
   margin-bottom: 35px;
   position: relative;
   overflow: hidden; }
 
-.categories-show-page .post .featured-media {
+.users-show-page .post .featured-media, .categories-show-page .post .featured-media {
   overflow: hidden;
   margin: -15px;
   margin-bottom: 24px; }
 
-.categories-show-page .post .post-content {
+.users-show-page .post .post-content, .categories-show-page .post .post-content {
   margin: 22px 0; }
 
-.categories-show-page .post .post-head .post-title {
+.users-show-page .post .post-head .post-title, .categories-show-page .post .post-head .post-title {
   margin: 0;
   font-size: 1.5em;
   line-height: 1.4em; }
 
-.categories-show-page .grid-item {
+.users-show-page .grid-item, .categories-show-page .grid-item {
   width: 33.33%;
   padding: 15px;
   margin-bottom: 10px;
   float: left; }
 
-.categories-show-page .grid-item .grid-wrap {
+.users-show-page .grid-item .grid-wrap, .categories-show-page .grid-item .grid-wrap {
   background-color: #fff;
   padding: 15px; }
 
-.categories-show-page .grid-item .subscribe-wrap {
+.users-show-page .grid-item .subscribe-wrap, .categories-show-page .grid-item .subscribe-wrap {
   background: transparent; }
 
 @media screen and (max-width: 970px) {
@@ -10901,5 +10901,11 @@ img.qrcode-img {
   padding: 30px; }
   .post-composing-box .header {
     margin: 20px 0 38px; }
+
+a, a:hover {
+  color: #f5b51a; }
+
+.meta-info .introduction {
+  margin: 6px 0; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -16,7 +16,6 @@
             <header class="post-head">
                 <h1 class="post-title">{{ $post->title }}</h1>
                 <section class="post-meta">
-                    <span class="author"><i class="fa fa-user" aria-hidden="true"></i> <a href="{{ $post->user->personal_website }}">{{ $post->user->name }}</a></span> ⋅
                     <time class="post-date" title="{{ $post->created_at }}"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ $post->created_at }}</time>
                 </section>
             </header>
@@ -46,7 +45,21 @@
 
         </article>
 
+        <div class="about-author clearfix">
+            <a href="{{ route('users.show', $post->user->id) }}"><img src="{{ $post->user->avatar }}" alt="{{ $post->user->name }}" class="avatar pull-left"></a>
 
+            <div class="details">
+                <div class="author">
+                    作者 <a href="{{ route('users.show', $post->user->id) }}">{{ $post->user->name }}</a>
+                </div>
+                <div class="meta-info">
+                    <div class="website"><i class="fa fa-globe"></i><a href="{{ $post->user->personal_website }}" targer="_blank"> 个人中心</a></div>
+                    <div class="introduction"><i class="fa fa-paint-brush"></i>
+                        {{ $post->user->introduction }}
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="bg-white recomanded-box">
             @include('_home_cell', ['section_title' => '推荐阅读', 'posts' => $posts])

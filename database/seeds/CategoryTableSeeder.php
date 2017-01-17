@@ -34,6 +34,11 @@ class CategoryTableSeeder extends Seeder
                 'name'        => '书籍',
                 'slug'        => 'books',
             ),
+            array(
+                'id'          => 6,
+                'name'        => '聚会',
+                'slug'        => 'meetup',
+            ),
         ));
     }
 }

@@ -1320,7 +1320,7 @@ footer .icons {
     padding: 0 15px;
 }
 
-.categories-show-page {
+.users-show-page, .categories-show-page {
 	.post {
 	    background: transparent;
 	    margin-bottom: 35px;
@@ -1533,4 +1533,12 @@ img.qrcode-img {
     .header {
         margin: 20px 0 38px;
     }
+}
+
+a, a:hover {
+    color:#f5b51a;
+}
+
+.meta-info .introduction {
+    margin: 6px 0;
 }

@@ -6,7 +6,7 @@
 
     <div class="col-md-12">
         <div class="category-header">
-            <h2 class=" font3"><i class="fa fa-folder-open-o"></i> {{ $category->name }}</h2>
+            <h2 class=" font3"><i class="fa fa-folder-open-o"></i> {{ $user->name }}</h2>
         </div>
     </div>
 
