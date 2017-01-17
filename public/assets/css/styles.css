@@ -10766,12 +10766,12 @@ footer .icons {
 
 @media screen and (max-width: 970px) {
   /* 5 columns for larger screens */
-  .categories-show-page .grid-item {
+  .users-show-page .grid-item, .categories-show-page .grid-item {
     width: 50%; } }
 
 @media screen and (max-width: 600px) {
   /* 5 columns for larger screens */
-  .categories-show-page .grid-item {
+  .users-show-page .grid-item, .categories-show-page .grid-item {
     width: 100%; } }
 
 .category-header {
