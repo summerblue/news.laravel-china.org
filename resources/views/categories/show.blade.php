@@ -1,5 +1,7 @@
 @extends('layouts.default')
 
+@section('title', $category->name . '分类的文章 | ')
+
 @section('content')
 
 <div class="row colom-container">
