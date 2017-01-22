@@ -22,6 +22,7 @@ class Kernel extends ConsoleKernel
         Commands\ESTInitRBAC::class,
 
         Commands\SyncUserActivedTime::class,
+        Commands\SendIssueToUser::class,
     ];
 
     /**

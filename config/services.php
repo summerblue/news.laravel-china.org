@@ -53,4 +53,10 @@ return [
         'client_secret' => env('WEIBO_SECRET'),
         'redirect'      => env('WEIBO_REDIRECT_URI'),
     ],
+
+    'sendcloud' => [
+        'apiuser'     => env('SENDCLOUD_APIUSER'),
+        'apikey'      => env('SENDCLOUD_APIKEY'),
+        'address_list'=> env('SENDCLOUD_ADDRESS_LIST'),
+    ],
 ];

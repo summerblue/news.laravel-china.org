@@ -6,11 +6,12 @@
                 <article class="col-md-6 col-md-offset-3 text-center foot-logo">
 
                     <p class="friend-links">
-                        <a href="https://laravel-china.org/">Laravel China 社区</a>
-                        <a href="https://laravel-china.org/docs/home">Laravel 中文文档</a>
+                        <a href="https://laravel-china.org/">LC 社区</a>
+                        <a href="https://laravel-china.org/docs/home">中文文档</a>
                         <a href="https://cs.laravel-china.org/">速查表</a>
                         <a href="https://laravel-china.org/categories/1">Laravel 工作</a>
                         <a href="https://laravel-china.org/laravel-tutorial/5.1/about">入门教程</a>
+                        <a href="{{ route('issues.index') }}">周刊存档</a>
                     </p>
 
                     <a href="index.html"><img alt="" title="" src="/assets/images/icon.png" /></a>

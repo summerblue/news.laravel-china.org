@@ -34,6 +34,6 @@ class IssueController extends Controller {
             $posts = $issue->getIsuuePosts();
         }
 
-		return view('issues.show', compact('issue', 'posts'));
+        return view('issues.show', compact('issue', 'posts'));
 	}
 }
