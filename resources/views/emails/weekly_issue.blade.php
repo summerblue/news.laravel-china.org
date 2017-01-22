@@ -10,6 +10,9 @@
 </head>
 <body>
 <div style="margin:0 auto">
+    <div style="display: none;"　　document.getElementById("typediv1").style.display="none";>
+        <img src="https://dn-phphub.qbox.me/uploads/images/201701/22/1/vF30Z0f4tv.png" >
+    </div>
         <div style="background-color:#f5f5f5;padding:20px 0">
             <div style="color:#333;margin:0 auto;padding:24px;max-width:700px;font-family:'Helvetica Neue',Helvetica,Arial,Sans-serif;font-size:13px;line-height:1.7;background-color:#fff">
                 <p style="margin:0;color:#555;font-size:11px;line-height:20px;margin-bottom:18px;text-align:right">如果你无法正常浏览本邮件，请<a href="{{ route('issues.show', [$issue->id]) }}" style="color:#07c;text-decoration:none" target="_blank">点此查看</a></p>
