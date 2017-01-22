@@ -52,7 +52,7 @@ return [
                 'yes' => '已发布',
                 'no'  => '未发布',
             ],
-            'value' => 'yes',
+            'value' => 'no',
         ),
     ],
 
