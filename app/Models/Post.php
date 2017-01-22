@@ -20,7 +20,6 @@ class Post extends BaseModel
     {
         $this->attributes['body'] = markdown($value);
         $this->attributes['body_original'] = $value;
-        $this->attributes['excerpt'] = make_excerpt($this->attributes['body']);
     }
 
     public function setCoverAttribute($file_name)

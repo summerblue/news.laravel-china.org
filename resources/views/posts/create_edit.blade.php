@@ -32,11 +32,15 @@
         </div>
 
         <div class="form-group">
-            <input class="form-control" id="post-title" placeholder="文章标题" name="title" type="text" value="{{ old('title') ?: (isset($post) ? $post->title : '') }}">
+            <input class="form-control" placeholder="文章标题" name="title" type="text" value="{{ old('title') ?: (isset($post) ? $post->title : '') }}">
         </div>
 
         <div class="form-group">
-            <input class="form-control" id="post-title" placeholder="文章封面，请到 laravel-china.org 上随便找个帖子评论框上传图片来获取 HTTPS 的 URL ！" name="cover" type="text" value="{{ old('cover') ?: (isset($post) ? $post->cover : '') }}">
+            <input class="form-control" placeholder="文章封面，请到 laravel-china.org 上随便找个帖子评论框上传图片来获取 HTTPS 的 URL ！" name="cover" type="text" value="{{ old('cover') ?: (isset($post) ? $post->cover : '') }}">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" placeholder="100 字概述，在列表页面和邮件中会用到，请认真填写。" name="excerpt" type="text" value="{{ old('excerpt') ?: (isset($post) ? $post->excerpt : '') }}" required="required">
         </div>
 
         <div class="form-group">
