@@ -8,6 +8,7 @@ class DatabaseSeeder extends Seeder
     protected $seeders = [
         'UsersTableSeeder',
         'CategoryTableSeeder',
+        'IssueTableSeeder',
         'PostTableSeeder',
     ];
 

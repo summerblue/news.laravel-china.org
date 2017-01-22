@@ -10,4 +10,9 @@ class BaseModel extends Model
     {
         return $query->orderBy('created_at', 'desc');
     }
+
+    public function scopeOrdered($query)
+    {
+        return $query->orderBy('order', 'desc');
+    }
 }

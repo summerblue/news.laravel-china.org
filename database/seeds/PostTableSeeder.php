@@ -5,6 +5,7 @@ use Faker\Factory as Faker;
 use Carbon\Carbon;
 use App\Models\User;
 use App\Models\Post;
+use App\Models\Issue;
 use App\Models\Category;
 
 class PostTableSeeder extends Seeder
@@ -17,6 +18,7 @@ class PostTableSeeder extends Seeder
         $positions = ['undefined'];
         $categories = Category::all()->pluck('id')->toArray();
         $users = User::all()->pluck('id')->toArray();
+        $issues = Issue::all()->pluck('id')->toArray();
 
         foreach (range(1, 200) as $index) {
             $datas[] = [
@@ -26,6 +28,7 @@ class PostTableSeeder extends Seeder
                 'position'         => $faker->randomElement($positions),
                 'user_id'       => $faker->randomElement($users),
                 'category_id'   => $faker->randomElement($categories),
+                'issue_id'   => $faker->randomElement($issues),
                 'cover'         => '/assets/images/faker/'.$faker->randomElement($filenames).'.jpg',
                 'created_at' => '2015-12-06 04:20:00',
                 'updated_at' => '2015-12-13 04:33:45',

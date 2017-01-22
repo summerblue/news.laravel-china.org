@@ -40,4 +40,28 @@ class Post extends BaseModel
 
         return cdn($file_name);
     }
+
+    public function scopeUnissued($query)
+    {
+        return $query->where('issue_id', '0');
+    }
+
+    public static function issuePostsByCid($cid, $issue_id = 0)
+    {
+        if ($issue_id == 0)  {
+            return static::where('category_id', $cid)
+                            ->unissued()
+                            ->ordered()
+                            ->recent()
+                            ->get();
+        } else {
+            return static::where('category_id', $cid)
+                            ->where('issue_id', $issue_id)
+                            ->ordered()
+                            ->recent()
+                            ->get();
+        }
+
+    }
+
 }

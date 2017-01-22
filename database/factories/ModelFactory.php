@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use App\Models\Issue;
 use Carbon\Carbon;
 
 /*
@@ -21,7 +22,17 @@ $factory->define(User::class, function (Faker\Generator $faker) {
         'password' => bcrypt(str_random(10)),
         'avatar' => '',
         'remember_token' => str_random(10),
-        'created_at'           => Carbon::now()->toDateTimeString(),
-        'updated_at'           => Carbon::now()->toDateTimeString(),
+        'created_at' => Carbon::now()->toDateTimeString(),
+        'updated_at' => Carbon::now()->toDateTimeString(),
+    ];
+});
+
+$factory->define(Issue::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->name,
+        'description' => $faker->safeEmail,
+        'is_published' => 'yes',
+        'created_at' => Carbon::now()->toDateTimeString(),
+        'updated_at' => Carbon::now()->toDateTimeString(),
     ];
 });

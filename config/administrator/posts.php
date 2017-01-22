@@ -80,6 +80,10 @@ return [
             'title' => '标题',
             'type' => 'text'
         ],
+        'order' => [
+            'title' => '优先级',
+            'value' => '0',
+        ],
         'position' => array(
             'title' => '文章类型',
             'type'     => 'enum',

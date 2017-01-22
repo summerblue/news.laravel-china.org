@@ -1542,3 +1542,24 @@ a, a:hover {
 .meta-info .introduction {
     margin: 6px 0;
 }
+.bg-white {
+    background-color: white;
+}
+
+.issues-index-page, .issues-show-page {
+    h1 {
+        margin: 20px;
+    }
+    .list-group {
+
+    }
+    .list-group-item {
+        padding: 15px 15px;
+        margin-bottom: 0px;
+        border: none;
+        border-bottom: 1px dashed #ddd;
+    }
+    article {
+        padding: 20px 30px;
+    }
+}
