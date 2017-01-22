@@ -73,6 +73,14 @@ class SendIssueToUser extends Command
                     'html'    => $contents,
                 ]
             ]);
+
+            $issue->is_published = 'yes';
+            $issue->save();
+
+            Post::unissued()->update([
+                'issue_id' => $issue->id
+            ]);
+
             $this->info('发送成功');
         } catch (ClientException $e) {
             $response = $e->getResponse();
