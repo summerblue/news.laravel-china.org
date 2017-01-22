@@ -67,6 +67,7 @@ return array(
         '内容管理' => [
             'posts',
             'categories',
+            'issues',
         ],
         '站点管理' => [
             'tags',
