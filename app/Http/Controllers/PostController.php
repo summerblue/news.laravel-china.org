@@ -45,7 +45,7 @@ class PostController extends Controller
     public function update($id, StorePostRequest $request)
     {
         $post = Post::findOrFail($id);
-        $post->update($request->only('title','body_original','category_id','cover'));
+        $post->update($request->only('title','body_original','category_id','cover', 'excerpt'));
 
         return redirect(route('posts.show', $post->id));
     }
