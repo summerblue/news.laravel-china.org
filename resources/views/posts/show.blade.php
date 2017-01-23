@@ -32,6 +32,7 @@
 
                     @if (Auth::check())
                         | <a href="{{ route('posts.edit', [$post->id]) }}"><i class="fa fa-edit"></i> 修改文章</a>
+                        | <a href="/admin/posts/{{ $post->id }}" target="_blank"><i class="fa fa-eye"></i> 后台查看</a>
                     @endif
 
                 </div>
