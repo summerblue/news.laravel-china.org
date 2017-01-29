@@ -9,10 +9,6 @@
 
         <article id="70" class="post">
 
-            <section class="featured-media">
-                <img src="{{ img_crop($post->cover, 1024, 546) }}" alt="{{ $post->title }}">
-            </section>
-
             <header class="post-head">
                 <h1 class="post-title">{{ $post->title }}</h1>
                 <section class="post-meta">
