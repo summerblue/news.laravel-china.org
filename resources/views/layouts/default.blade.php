@@ -21,10 +21,6 @@
 
 <body class="{{ route_class() }}-page">
 
-    <section class="featured-media">
-        <img src="{{ img_crop($post->cover, 1024, 546) }}" alt="{{ $post->title }}">
-    </section>
-
     @include('layouts.partials.topnav')
 
     <section class="mastwrap">
