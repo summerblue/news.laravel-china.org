@@ -11,6 +11,11 @@ class Post extends BaseModel
         return $this->belongsTo(User::class);
     }
 
+    public function issue()
+    {
+        return $this->belongsTo(Issue::class);
+    }
+
     public function Category()
     {
         return $this->belongsTo(Category::class);

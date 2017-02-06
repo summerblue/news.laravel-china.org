@@ -108,6 +108,12 @@ return [
             'title' => '分类',
             'name_field' => 'name',
         ),
+        'issue' => array(
+            'type' => 'relationship',
+            'title' => '周刊',
+            'name_field' => 'name',
+            'value' => '0',
+        ),
         'user' => [
             'title' => '作者',
             'type' => 'relationship',
