@@ -21,7 +21,7 @@ class CreateLinksTable extends Migration
             $table->string('user_link')->nullable();
             $table->integer('order')->unsigned()->default(0)->index();
             $table->integer('category_id')->unsigned()->default(0)->index();
-            $table->integer('issue_id')->index();
+            $table->integer('issue_id')->index()->default(0);
             $table->timestamps();
         });
     }
