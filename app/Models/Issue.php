@@ -15,20 +15,43 @@ class Issue extends Model
 
     public function getUnissuedPosts()
     {
-        $posts['news_posts'] = Post::issuePostsByCid(1);
-        $posts['tutorials_posts'] = Post::issuePostsByCid(2);
-        $posts['packages_posts'] = Post::issuePostsByCid(3);
-        $posts['resources_posts'] = Post::issuePostsByCid(4);
+        $posts['news'] = Post::issuePostsByCid(1);
+        $posts['tutorials'] = Post::issuePostsByCid(2);
+        $posts['packages'] = Post::issuePostsByCid(3);
+        $posts['resources'] = Post::issuePostsByCid(4);
         $posts['meetup'] = Post::issuePostsByCid(6);
         return $posts;
     }
+
     public function getIsuuePosts()
     {
-        $posts['news_posts'] = Post::issuePostsByCid(1, $this->id);
-        $posts['tutorials_posts'] = Post::issuePostsByCid(2, $this->id);
-        $posts['packages_posts'] = Post::issuePostsByCid(3, $this->id);
-        $posts['resources_posts'] = Post::issuePostsByCid(4, $this->id);
+        $posts['news'] = Post::issuePostsByCid(1, $this->id);
+        $posts['tutorials'] = Post::issuePostsByCid(2, $this->id);
+        $posts['packages'] = Post::issuePostsByCid(3, $this->id);
+        $posts['resources'] = Post::issuePostsByCid(4, $this->id);
         $posts['meetup'] = Post::issuePostsByCid(6, $this->id);
+        return $posts;
+    }
+
+    // Links
+
+    public function getUnissuedLinks()
+    {
+        $posts['news'] = Link::byCid(1);
+        $posts['tutorials'] = Link::byCid(2);
+        $posts['packages'] = Link::byCid(3);
+        $posts['resources'] = Link::byCid(4);
+        $posts['meetup'] = Link::byCid(6);
+        return $posts;
+    }
+
+    public function getIsuueLinks()
+    {
+        $posts['news'] = Link::byCid(1, $this->id);
+        $posts['tutorials'] = Link::byCid(2, $this->id);
+        $posts['packages'] = Link::byCid(3, $this->id);
+        $posts['resources'] = Link::byCid(4, $this->id);
+        $posts['meetup'] = Link::byCid(6, $this->id);
         return $posts;
     }
 }

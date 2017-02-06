@@ -67,6 +67,7 @@ return array(
         '内容管理' => [
             'posts',
             'categories',
+            'links',
             'issues',
         ],
         '站点管理' => [

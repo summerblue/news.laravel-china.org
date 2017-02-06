@@ -30,10 +30,12 @@ class IssueController extends Controller {
         }
         if ($issue->is_published == 'no') {
             $posts = $issue->getUnissuedPosts();
+            $links = $issue->getUnissuedLinks();
         } else {
             $posts = $issue->getIsuuePosts();
+            $links = $issue->getIsuueLinks();
         }
 
-        return view('emails.weekly_issue', compact('issue', 'posts'));
+        return view('emails.weekly_issue', compact('issue', 'posts', 'links'));
 	}
 }

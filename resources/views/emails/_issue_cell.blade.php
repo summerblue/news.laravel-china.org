@@ -6,7 +6,16 @@
         <h4 style="margin:0;margin-bottom:6px;margin-top:6px">
             <a style="font-size:14px;line-height:22px;font-weight:bold;text-decoration:none;color:#259;border:none;outline:none" href="{{ route('posts.show', [$post->id]) }}" target="_blank">{{ $post->title }}</a>
 
-            <a href="{{ $post->user->personal_website }}"><small>{{ $post->user->name }}</small></a>
+            <a href="{{ $post->user->personal_website }}" target="_blank"><small>{{ $post->user->name }}</small></a>
         </h4>
         <p style="margin:0;font-size:13px;line-height:20px;padding-bottom:10px;border-bottom:1px dotted #eee">{{ $post->excerpt }}</p>
+    @endforeach
+
+    @foreach ($links as $link)
+        <h4 style="margin:0;margin-bottom:6px;margin-top:6px">
+            <a style="font-size:14px;line-height:22px;font-weight:bold;text-decoration:none;color:#259;border:none;outline:none" href="{{ $link->link }}" target="_blank">{{ $link->title }}</a>
+
+            <a href="{{ $link->user_link }}"><small>{{ $link->user_name }}</small></a>
+        </h4>
+        <p style="margin:0;font-size:13px;line-height:20px;padding-bottom:10px;border-bottom:1px dotted #eee">{{ $link->description }}</p>
     @endforeach

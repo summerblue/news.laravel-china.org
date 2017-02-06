@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\Models\Issue;
 use App\Models\Post;
+use App\Models\Link;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Pool;
@@ -54,9 +55,8 @@ class SendIssueToUser extends Command
 
         // 取出周刊数据
         $posts = $issue->getUnissuedPosts();
-
-        // $view = View::make('my_view', ['name' => 'Rishabh']);
-        $view = view('emails.weekly_issue', compact('issue', 'posts'));
+        $links = $issue->getUnissuedLinks();
+        $view = view('emails.weekly_issue', compact('issue', 'posts', 'links'));
         $contents = $view->render();
 
         // 发布到 sendcloud 上
@@ -78,6 +78,10 @@ class SendIssueToUser extends Command
             $issue->save();
 
             Post::unissued()->update([
+                'issue_id' => $issue->id
+            ]);
+
+            Link::unissued()->update([
                 'issue_id' => $issue->id
             ]);
 
