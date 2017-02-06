@@ -32,7 +32,10 @@
                     @include('emails._issue_cell', ['section_title' => '线下聚会', 'posts' => $posts['meetup'], 'links' => $links['meetup'], 'category_id' => 6])
                 @endif
                 @if (count($posts['resources']) > 0 || count($links['resources']) > 0)
-                    @include('emails._issue_cell', ['section_title' => '资源推荐', 'posts' => $posts['resources'], 'links' => $links['resources'], 'category_id' => 4, 'extra_class' => 'add-margin-bottom'])
+                    @include('emails._issue_cell', ['section_title' => '资源推荐', 'posts' => $posts['resources'], 'links' => $links['resources'], 'category_id' => 4])
+                @endif
+                @if (count($posts['community']) > 0 || count($links['community']) > 0)
+                    @include('emails._issue_cell', ['section_title' => '社区精华', 'posts' => $posts['community'], 'links' => $links['community'], 'category_id' => 8, 'extra_class' => 'add-margin-bottom'])
                 @endif
 </div>
 </div>
