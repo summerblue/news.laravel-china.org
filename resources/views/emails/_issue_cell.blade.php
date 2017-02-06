@@ -15,7 +15,7 @@
         <h4 style="margin:0;margin-bottom:6px;margin-top:6px">
             <a style="font-size:14px;line-height:22px;font-weight:bold;text-decoration:none;color:#259;border:none;outline:none" href="{{ $link->link }}" target="_blank">{{ $link->title }}</a>
 
-            <a href="{{ $link->user_link }}" style="padding-left: 12px;color: #4a79b7;"><small>{{ $link->user_name }}</small></a>
+            <a href="{{ $link->user_link }}" style="color: #4a79b7;"><small>{{ $link->user_name }}</small></a>
         </h4>
         <p style="margin:0;font-size:13px;line-height:20px;padding-bottom:10px;border-bottom:1px dotted #eee">{{ $link->description }}</p>
     @endforeach
