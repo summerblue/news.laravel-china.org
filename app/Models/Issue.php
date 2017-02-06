@@ -21,6 +21,7 @@ class Issue extends Model
         $posts['resources'] = Post::issuePostsByCid(4);
         $posts['meetup'] = Post::issuePostsByCid(6);
         $posts['community'] = Post::issuePostsByCid(8);
+        $posts['jobs'] = Post::issuePostsByCid(9);
         return $posts;
     }
 
@@ -32,6 +33,7 @@ class Issue extends Model
         $posts['resources'] = Post::issuePostsByCid(4, $this->id);
         $posts['meetup'] = Post::issuePostsByCid(6, $this->id);
         $posts['community'] = Post::issuePostsByCid(8, $this->id);
+        $posts['jobs'] = Post::issuePostsByCid(9, $this->id);
         return $posts;
     }
 
@@ -45,6 +47,7 @@ class Issue extends Model
         $posts['resources'] = Link::byCid(4);
         $posts['meetup'] = Link::byCid(6);
         $posts['community'] = Link::byCid(8);
+        $posts['jobs'] = Link::byCid(9);
         return $posts;
     }
 
@@ -56,6 +59,7 @@ class Issue extends Model
         $posts['resources'] = Link::byCid(4, $this->id);
         $posts['meetup'] = Link::byCid(6, $this->id);
         $posts['community'] = Link::byCid(8, $this->id);
+        $posts['jobs'] = Link::byCid(9, $this->id);
         return $posts;
     }
 }

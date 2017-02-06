@@ -22,6 +22,9 @@
                 @if (count($posts['news']) > 0 || count($links['news']) > 0)
                     @include('emails._issue_cell', ['section_title' => '最新资讯', 'posts' => $posts['news'], 'links' => $links['news'], 'category_id' => 1])
                 @endif
+                @if (count($posts['jobs']) > 0 || count($links['jobs']) > 0)
+                    @include('emails._issue_cell', ['section_title' => 'Laravel 酷工作', 'posts' => $posts['jobs'], 'links' => $links['jobs'], 'category_id' => 1])
+                @endif
                 @if (count($posts['tutorials']) > 0 || count($links['tutorials']) > 0)
                     @include('emails._issue_cell', ['section_title' => '开发技巧', 'posts' => $posts['tutorials'], 'links' => $links['tutorials'], 'category_id' => 2])
                 @endif
