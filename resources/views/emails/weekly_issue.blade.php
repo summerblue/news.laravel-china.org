@@ -22,16 +22,16 @@
                 @if (count($posts['news']) > 0 || count($links['news']) > 0)
                     @include('emails._issue_cell', ['section_title' => '最新资讯', 'posts' => $posts['news'], 'links' => $links['news'], 'category_id' => 1])
                 @endif
-                @if (count($posts['tutorials']) > 0)
+                @if (count($posts['tutorials']) > 0 || count($links['tutorials']) > 0)
                     @include('emails._issue_cell', ['section_title' => '开发技巧', 'posts' => $posts['tutorials'], 'links' => $links['tutorials'], 'category_id' => 2])
                 @endif
-                @if (count($posts['packages']) > 0)
+                @if (count($posts['packages']) > 0 || count($links['packages']) > 0)
                     @include('emails._issue_cell', ['section_title' => '扩展推荐', 'posts' => $posts['packages'], 'links' => $links['packages'], 'category_id' => 3])
                 @endif
-                @if (count($posts['meetup']) > 0)
+                @if (count($posts['meetup']) > 0 || count($links['meetup']) > 0)
                     @include('emails._issue_cell', ['section_title' => '线下聚会', 'posts' => $posts['meetup'], 'links' => $links['meetup'], 'category_id' => 6])
                 @endif
-                @if (count($posts['resources']) > 0)
+                @if (count($posts['resources']) > 0 || count($links['resources']) > 0)
                     @include('emails._issue_cell', ['section_title' => '资源推荐', 'posts' => $posts['resources'], 'links' => $links['resources'], 'category_id' => 4, 'extra_class' => 'add-margin-bottom'])
                 @endif
 </div>
