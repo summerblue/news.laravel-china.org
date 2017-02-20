@@ -17,11 +17,11 @@
             <ul class="nav navbar-nav" data-smartmenus-id="14739838239025269">
               <li><a href="{{ route('categories.show', [1]) }}">新闻</a></li>
               <li><a href="{{ route('categories.show', [2]) }}">教程</a></li>
-              <li><a href="{{ route('categories.show', [3]) }}">扩展</a></li>
               <li><a href="{{ route('categories.show', [4]) }}">资源</a></li>
               <li><a href="https://laravel-china.org/">论坛</a></li>
               <li><a href="https://doc.laravel-china.org/docs">文档</a></li>
               <li><a href="https://laravel-china.org/laravel-tutorial/5.1/about">Laravel 教程</a></li>
+              <li><a href="{{ route('issues.index') }}">周刊</a></li>
               @if (Auth::check())
                 <li><a href="{{ route('posts.create') }}"><i class="fa fa-plus"></i></a></li>
               @endif
