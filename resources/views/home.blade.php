@@ -32,8 +32,15 @@
         </div>
 
         <article class="col-md-3 pic-block qrcode-pic-block">
-            <div class="shodow-box" >
-                <img class="img-responsive qrcode-img" alt="" title="" src="/assets/images/qrcode_new.png" />
+            <div class="shodow-box" style="padding: 8px;">
+                <div class="grid-wrap">
+            <a href="https://cs.laravel-china.org/" class="btn btn-default btn-block" target="_blank">Laravel 速查表</a>
+            <a href="https://easywechat.org/" class="btn btn-default btn-block" target="_blank"><i class="fa fa-wechat" aria-hidden="true"></i> Easy WeChat</a>
+            <a href="https://laravel-china.org/laravel-tutorial/5.1/about" class="btn btn-default btn-block" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i> Laravel 入门教程</a>
+            <a href="https://laravel-china.org/topics/3626" class="btn btn-default btn-block" target="_blank">Laravel 远程工作</a>
+            <a href="https://yousails.com/" class="btn btn-default btn-block" target="_blank">技术服务 / 技术合作</a>
+            <a href="https://yousails.com/waibao" class="btn btn-default btn-block" target="_blank">推荐外包，拿分成</a>
+        </div>
             </div>
         </article>
 
