@@ -23,6 +23,8 @@ class Kernel extends ConsoleKernel
 
         Commands\SyncUserActivedTime::class,
         Commands\SendIssueToUser::class,
+
+        Commands\TopicToLinkCommand::class,
     ];
 
     /**
