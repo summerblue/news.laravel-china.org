@@ -53,42 +53,12 @@ class SendIssueToUser extends Command
             exit();
         }
 
-        // 取出周刊数据
-        $posts = $issue->getUnissuedPosts();
-        $links = $issue->getUnissuedLinks();
-        $view = view('emails.weekly_issue', compact('issue', 'posts', 'links'));
-        $contents = $view->render();
+        Post::unissued()->update([
+            'issue_id' => $issue->id
+        ]);
 
-        // 发布到 sendcloud 上
-        $client = new Client();
-        try {
-            $response = $client->post('http://api.sendcloud.net/apiv2/mail/send', [
-                'form_params' => [
-                    'apiUser' => config('services.sendcloud.apiuser'),
-                    'apiKey'  => config('services.sendcloud.apikey'),
-                    'from'    => 'Laravel资讯<noreply@laravel-china.org>',
-                    'to'      => config('services.sendcloud.address_list'),
-                    'useAddressList'   => 'true',
-                    'subject' => $issue->name,
-                    'html'    => $contents,
-                ]
-            ]);
-
-            $issue->is_published = 'yes';
-            $issue->save();
-
-            Post::unissued()->update([
-                'issue_id' => $issue->id
-            ]);
-
-            Link::unissued()->update([
-                'issue_id' => $issue->id
-            ]);
-
-            $this->info('发送成功');
-        } catch (ClientException $e) {
-            $response = $e->getResponse();
-            dd($response);
-        }
+        Link::unissued()->update([
+            'issue_id' => $issue->id
+        ]);
     }
 }
