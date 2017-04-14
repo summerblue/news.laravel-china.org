@@ -47,7 +47,16 @@
                                     <tr>
                                         <td align="Center" bgColor="#f1f1f1">
                                             <div>
-                                                <div id="txtHolder-4" class="txtEditorClass" style="color: #5d5d5d; font-size: 11px; font-family: 'Arial';"><a href="https://laravel-china.org/">Laravel China 社区</a></div>
+                                                <div id="txtHolder-4" class="txtEditorClass" style="color: #5d5d5d; font-size: 13px; font-family: 'Arial'; position: relative;margin-bottom: 20px;">
+                                                邮件服务由
+                                                <a href="http://www.sendcloud.net/" target="_blank" alt="Sendcloud" title="Sendcloud">
+                                                SendCloud
+                                                </a> 赞助
+                                                 <a href="http://www.sendcloud.net/" target="_blank" alt="Sendcloud" title="Sendcloud">
+                                                    <img src="https://dn-phphub.qbox.me/uploads/banners/JpTCK6OKYBIrBIWdtob8.png?imageView2/0/w/0/h/40" style="height:20px;position: absolute;">
+                                                </a>
+
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
