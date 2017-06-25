@@ -147,7 +147,7 @@ gulp watch
 ## 扩展包描述
 
 | 扩展包 | 一句话描述 | 本项目应用场景 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- |
 |[spatie/laravel-backup](https://github.com/spatie/laravel-backup)| 数据库备份解决方案 | 本项目的数据库备份使用此扩展包完成。 |
 |[summerblue/administrator](https://github.com/summerblue/administrator)| 管理后台解决方案| 本项目的后台使用此扩展包开发。 |
 |[laracasts/flash](https://packagist.org/packages/laracasts/flash)| 简单的 flash messages | 用户操作成功/失败的提示使用此扩展包开发 |
