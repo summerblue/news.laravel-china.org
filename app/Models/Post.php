@@ -56,13 +56,11 @@ class Post extends BaseModel
             return static::where('category_id', $cid)
                             ->unissued()
                             ->ordered()
-                            ->recent()
                             ->get();
         } else {
             return static::where('category_id', $cid)
                             ->where('issue_id', $issue_id)
                             ->ordered()
-                            ->recent()
                             ->get();
         }
 
