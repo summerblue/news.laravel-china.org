@@ -23,9 +23,14 @@
 
     @include('layouts.partials.topnav')
 
+
     <section class="mastwrap">
 
         <div class="container">
+
+    <div class="alert alert-dismissable alert-danger">
+        <p>本站点已经停止维护，更多关于 Laravel 的内容请前往 <a href="https://laravel-china.org/topics">laravel-china.org</a> </p>
+    </div>
 
             @yield('content')
         </div>

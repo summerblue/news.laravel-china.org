@@ -9945,23 +9945,6 @@ fieldset h1 {
 .space-left {
   margin-left: 1%; }
 
-.alert {
-  top: 0;
-  left: 0;
-  margin-top: 0px;
-  border-radius: 0px;
-  padding: 5px;
-  transition: all .8s linear; }
-
-.alert > p {
-  padding: 0px;
-  text-shadow: none;
-  font-size: 10px;
-  line-height: 17px;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
 .contact-wallpaper {
   padding: 100px 0;
   background-position: center center;
